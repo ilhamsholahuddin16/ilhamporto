@@ -1,0 +1,306 @@
+/* 
+backgroud utama : #000 --> Hitam
+warna pendukung 1 : #333333 --> Abu-Abu Tua
+warna pendukung 2 : #666666 -->Abu-Abu terang */
+
+/* untuk warna font adalah putih = #ffff */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header-bar{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.header-bar .logo a {
+    font-family: 'Orbitron', sans-serif;
+    font-weight:800;
+    font-size: 2rem;
+    color: gold;
+}
+
+.header-bar .logo span{
+    color:silver;
+}
+
+.header-bar .nav-list li {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin:0 1rem ;
+}
+
+.header-bar .nav-list a {
+    color: white;
+}
+
+.header-bar .nav-list a:hover {
+    color:gold;
+}
+
+.home-box {
+    box-shadow: #ffff 0px 3px 8px;
+    border-radius: 5px;
+    padding: 200px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.home-box h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+.home-box a {
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    background-color: #1aa5ff;
+    border: 2px solid silver;
+    border-radius: 9999px;
+    font-weight: bold;
+    -webkit-border-radius: 9999px;
+    -moz-border-radius: 9999px;
+    -ms-border-radius: 9999px;
+    -o-border-radius: 9999px;
+}
+.home-box a:hover {
+    background-color: #3333;
+    color: white;
+}
+
+.service {
+    box-shadow: #ffff 0px 3px 8px;
+    border-radius: 5px;
+    padding: auto;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.service-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 900;
+}
+.service-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-box .service-list {
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 300px;
+    text-align: justify;
+    background-color: #6666;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.service-box .service-list h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.service-box .service-list img {
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    box-shadow: #ffff 0px 3px 8px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.about-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5% auto;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.portofolio {
+    box-shadow: #ffff 0px 3px 8px;
+    border-radius: 5px;
+    padding: 200px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.skill-box {
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: #ffff 0px 3px 8px;
+    border-radius: 5px;
+    padding: auto;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.skill-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.skill-box .skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skill-list li {
+    list-style: none;
+    padding: 0;
+}
+.skill-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skill-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #6666;
+    margin:5% auto;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+.skill-item svg {
+    margin-bottom: 10px;
+}
+
+.skill-item span {
+    margin-top: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #ffff 0px 3px 8px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #1aa5ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3333;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    font-weight: bold;
+}
